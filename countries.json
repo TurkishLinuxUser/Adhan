@@ -1,0 +1,243 @@
+{
+    "Albania": [
+        "Tirana", "Durrës", "Vlorë", "Shkodër", "Fier", "Kamëz", "Korçë", "Berat", "Lushnjë", "Sarandë", 
+        "Pogradec", "Kukës", "Lezhë", "Elbasan", "Laç", "Gjirokastër", "Patos", "Kavajë", "Kuçovë", "Tepelenë"
+    ],
+    "Andorra": [
+        "Andorra la Vella", "Escaldes-Engordany", "Encamp", "Sant Julià de Lòria", "La Massana", "Santa Coloma",
+        "Ordino", "Canillo"
+    ],
+    "Armenia": [
+        "Yerevan", "Gyumri", "Vanadzor", "Vagharshapat", "Hrazdan", "Abovyan", "Kapan", "Ararat", "Armavir",
+        "Gavar", "Stepanavan", "Masis", "Ashtarak", "Sevan", "Artik", "Goris", "Hoktemberyan", "Charentsavan",
+        "Martuni"
+    ],
+    "Austria": [
+        "Vienna", "Graz", "Linz", "Salzburg", "Innsbruck", "Klagenfurt", "Villach", "Wels", "St. Pölten",
+        "Dornbirn", "Wiener Neustadt", "Steyr", "Feldkirch", "Bregenz", "Leoben", "Krems an der Donau", "Baden",
+        "Wolfsberg", "Klosterneuburg", "Leonding"
+    ],
+    "Azerbaijan": [
+        "Baku", "Ganja", "Sumqayit", "Mingachevir", "Lankaran", "Shirvan", "Nakhchivan", "Yevlakh", "Barda",
+        "Shaki", "Gusar", "Khachmaz", "Sabirabad", "Sheki", "Agdam", "Agjabadi", "Mardakan", "Goychay", "Bilasuvar",
+        "Saatlı"
+    ],
+    "Belarus": [
+        "Minsk", "Gomel", "Mogilev", "Vitebsk", "Grodno", "Brest", "Bobruisk", "Baranovichi", "Pinsk", "Orsha",
+        "Novopolotsk", "Molodechno", "Lida", "Polatsk", "Zhlobin", "Svetlogorsk", "Slutsk", "Zhodino", "Soligorsk",
+        "Rechytsa"
+    ],
+    "Belgium": [
+        "Brussels", "Antwerp", "Ghent", "Charleroi", "Liège", "Bruges", "Namur", "Leuven", "Mons", "Aalst",
+        "Mechelen", "La Louvière", "Kortrijk", "Hasselt", "Ostend", "Sint-Niklaas", "Tournai", "Genk", "Seraing",
+        "Roeselare"
+    ],
+    "Bosnia and Herzegovina": [
+        "Sarajevo", "Banja Luka", "Tuzla", "Zenica", "Mostar", "Prijedor", "Brčko", "Bijeljina", "Bihac",
+        "Trebinje", "Travnik", "Doboj", "Cazin", "Sanski Most", "Velika Kladusa", "Zavidovici", "Bugojno",
+        "Konjic", "Livno", "Gorazde"
+    ],
+    "Bulgaria": [
+        "Sofia", "Plovdiv", "Varna", "Burgas", "Ruse", "Stara Zagora", "Pleven", "Sliven", "Dobrich", "Shumen",
+        "Pernik", "Yambol", "Haskovo", "Blagoevgrad", "Veliko Tarnovo", "Vratsa", "Gabrovo", "Asenovgrad",
+        "Vidin", "Kazanlak"
+    ],
+    "Croatia": [
+        "Zagreb", "Split", "Rijeka", "Osijek", "Zadar", "Slavonski Brod", "Pula", "Sesvete", "Karlovac", "Varaždin",
+        "Šibenik", "Sisak", "Vinkovci", "Vukovar", "Dubrovnik", "Bjelovar", "Koprivnica", "Đakovo", "Požega",
+        "Samobor"
+    ],
+    "Cyprus": [
+        "Nicosia", "Limassol", "Larnaca", "Famagusta", "Paphos", "Kyrenia", "Protaras", "Morphou", "Aradippou",
+        "Paralimni", "Lefka", "Güzelyurt", "Keryneia"
+    ],
+    "Czech Republic": [
+        "Prague", "Brno", "Ostrava", "Plzen", "Liberec", "Olomouc", "Usti nad Labem", "Hradec Kralove", "Ceske Budejovice",
+        "Pardubice", "Havirov", "Zlin", "Kladno", "Most", "Karvina", "Opava", "Frydek-Mistek", "Decin", "Jihlava"
+    ],
+    "Denmark": [
+        "Copenhagen", "Aarhus", "Odense", "Aalborg", "Esbjerg", "Randers", "Kolding", "Horsens", "Vejle", "Roskilde",
+        "Helsingør", "Herning", "Silkeborg", "Næstved", "Fredericia", "Hillerød", "Horsholm", "Holstebro", "Taastrup",
+        "Slagelse"
+    ],
+    "Estonia": [
+        "Tallinn", "Tartu", "Narva", "Pärnu", "Kohtla-Järve", "Viljandi", "Rakvere", "Maardu", "Sillamäe", "Kuressaare",
+        "Võru", "Valga", "Jõhvi", "Haapsalu", "Keila", "Paide", "Türi", "Elva", "Rapla"
+    ],
+    "Finland": [
+        "Helsinki", "Espoo", "Tampere", "Vantaa", "Oulu", "Turku", "Jyväskylä", "Lahti", "Kuopio", "Pori",
+        "Kouvola", "Joensuu", "Lappeenranta", "Hämeenlinna", "Vaasa", "Seinäjoki", "Rovaniemi", "Mikkeli", "Salo",
+        "Kotka"
+    ],
+    "France": [
+        "Paris", "Marseille", "Lyon", "Toulouse", "Nice", "Nantes", "Strasbourg", "Montpellier", "Bordeaux", "Lille",
+        "Rennes", "Reims", "Le Havre", "Cergy", "Saint-Étienne", "Toulon", "Angers", "Grenoble", "Dijon", "Nîmes"
+    ],
+    "Georgia": [
+        "Tbilisi", "Kutaisi", "Batumi", "Rustavi", "Zugdidi", "Gori", "Poti", "Samtredia", "Khashuri", "Senaki",
+        "Marneuli", "Telavi", "Akhaltsikhe", "Kobuleti", "Tsqaltubo", "Sagarejo", "Tskhinvali", "Borjomi", "Kaspi",
+        "Ninotsminda"
+    ],
+    "Germany": [
+        "Berlin", "Hamburg", "Munich", "Cologne", "Frankfurt am Main", "Stuttgart", "Düsseldorf", "Dortmund", "Essen",
+        "Leipzig", "Bremen", "Dresden", "Hanover", "Nuremberg", "Duisburg", "Bochum", "Wuppertal", "Bielefeld", "Bonn"
+    ],
+    "Greece": [
+        "Athens", "Thessaloniki", "Patras", "Heraklion", "Larissa", "Volos", "Rhodes", "Ioannina", "Chania", "Chalcis",
+        "Lamia", "Kavala", "Alexandroupoli", "Katerini", "Tripoli", "Serres", "Livadeia", "Mytilene", "Komotini",
+        "Corinth"
+    ],
+    "Hungary": [
+        "Budapest", "Debrecen", "Szeged", "Miskolc", "Pécs", "Győr", "Nyíregyháza", "Kecskemét", "Székesfehérvár",
+        "Szombathely", "Szolnok", "Tatabánya", "Kaposvár", "Érd", "Veszprém", "Békéscsaba", "Zalaegerszeg",
+        "Sopron", "Eger", "Nagykanizsa"
+    ],
+    "Iceland": [
+        "Reykjavik", "Kopavogur", "Hafnarfjordur", "Akureyri", "Reykjanesbær", "Kópavogur", "Hafnarfjörður",
+        "Akranes", "Selfoss", "Njardvik", "Akureyri", "Husavik", "Grindavik", "Isafjordur", "Seydisfjordur",
+        "Egilsstadir", "Hofn", "Blonduos", "Borgarnes", "Hella"
+    ],
+    "Ireland": [
+        "Dublin", "Cork", "Limerick", "Galway", "Waterford", "Drogheda", "Dundalk", "Swords", "Bray", "Navan",
+        "Ennis", "Balbriggan", "Tralee", "Skerries", "Carrick-on-Shannon", "Laois", "Cobh", "Wicklow", "Shannon",
+        "Killarney"
+    ],
+    "Italy": [
+        "Rome", "Milan", "Naples", "Turin", "Palermo", "Genoa", "Bologna", "Florence", "Bari", "Catania",
+        "Venice", "Verona", "Messina", "Padua", "Trieste", "Taranto", "Brescia", "Parma", "Prato", "Modena"
+    ],
+    "Kazakhstan": [
+        "Nur-Sultan", "Almaty", "Shymkent", "Karaganda", "Aktobe", "Taraz", "Pavlodar", "Ust-Kamenogorsk", "Semey",
+        "Kostanay", "Kyzylorda", "Atyrau", "Petropavl", "Aktau", "Temirtau", "Kokshetau", "Rudny", "Ekibastuz",
+        "Zhezkazgan", "Taldykorgan"
+    ],
+    "Kosovo": [
+        "Pristina", "Prizren", "Gjakova", "Peja", "Mitrovica", "Ferizaj", "Gjilan", "Vushtrri", "Suva Reka",
+        "Obiliq", "Podujevo", "Llazicë", "Dragash", "Deçan", "Shtime", "Rahovec", "Klinë", "Lipjan", "Kamenicë",
+        "Zubin Potok"
+    ],
+    "Latvia": [
+        "Riga", "Daugavpils", "Liepaja", "Jelgava", "Jurmala", "Ventspils", "Rezekne", "Valmiera", "Ogre", "Tukums",
+        "Cesis", "Salaspils", "Kuldiga", "Sigulda", "Dobele", "Bauska", "Ludza", "Aizkraukle", "Gulbene", "Madona"
+    ],
+    "Liechtenstein": [
+        "Vaduz", "Balzers", "Eschen", "Triesen", "Mauren", "Triesenberg", "Ruggell", "Gamprin", "Schellenberg",
+        "Planken", "Schaan", "Balzers"
+    ],
+    "Lithuania": [
+        "Vilnius", "Kaunas", "Klaipeda", "Šiauliai", "Panevėžys", "Alytus", "Marijampolė", "Mažeikiai", "Jonava",
+        "Utena", "Kėdainiai", "Telšiai", "Visaginas", "Tauragė", "Šilutė", "Radviliškis", "Palanga", "Plungė",
+        "Kretinga", "Silale"
+    ],
+    "Luxembourg": [
+        "Luxembourg City", "Esch-sur-Alzette", "Differdange", "Dudelange", "Ettelbruck", "Diekirch", "Wiltz",
+        "Echternach", "Rumelange", "Grevenmacher", "Remich", "Vianden", "Kayl", "Mersch", "Redange", "Schifflange",
+        "Sanem", "Mondorf-les-Bains", "Strassen", "Bertrange"
+    ],
+    "Malta": [
+        "Valletta", "Birkirkara", "Mosta", "Qormi", "Sliema", "Zabbar", "Saint John", "Mellieha", "Paola", "Victoria",
+        "Luqa", "Marsa", "Tarxien", "Attard", "Xaghra", "Marsaskala", "Balzan", "Naxxar", "Gzira", "Siggiewi"
+    ],
+    "Moldova": [
+        "Chisinau", "Tiraspol", "Balti", "Bender", "Rîbnita", "Cahul", "Ungheni", "Soroca", "Orhei", "Dubăsari",
+        "Comrat", "Edinet", "Călărași", "Causeni", "Straseni", "Falesti", "Vulcanesti", "Floresti", "Drochia",
+        "Ialoveni"
+    ],
+    "Monaco": [
+        "Monaco", "Monte Carlo", "La Condamine", "Fontvieille", "Moneghetti", "Jardin Exotique", "Larvotto",
+        "Port Hercule", "La Rousse", "Saint Roman", "Les Moneghetti", "Moneghetti", "Les Révoires", "Monte-Carlo",
+        "Les Moulins", "Moulins", "Sainte-Dévote", "Ville", "Cannes", "Nice"
+    ],
+    "Montenegro": [
+        "Podgorica", "Niksic", "Herceg Novi", "Pljevlja", "Bijelo Polje", "Cetinje", "Bar", "Berane", "Ulcinj",
+        "Tivat", "Kotor", "Rozaje", "Danilovgrad", "Mojkovac", "Gusinje", "Petnjica", "Andrijevica", "Sutomore",
+        "Tuzi", "Zabljak"
+    ],
+    "Netherlands": [
+        "Amsterdam", "Rotterdam", "The Hague", "Utrecht", "Eindhoven", "Tilburg", "Groningen", "Almere Stad",
+        "Breda", "Nijmegen", "Enschede", "Haarlem", "Arnhem", "Zaanstad", "Amersfoort", "Apeldoorn", "Zwolle",
+        "Leiden", "Dordrecht", "Ede"
+    ],
+    "North Macedonia": [
+        "Skopje", "Bitola", "Kumanovo", "Prilep", "Tetovo", "Veles", "Ohrid", "Gostivar", "Strumica", "Kavadarci",
+        "Struga", "Kochani", "Kicevo", "Lipkovo", "Radovis", "Shtip", "Gevgelija", "Kriva Palanka", "Negotino",
+        "Debar"
+    ],"Norway": [
+        "Oslo", "Bergen", "Stavanger", "Trondheim", "Drammen", "Fredrikstad", "Kristiansand", "Sandnes",
+        "Tromsø", "Sarpsborg", "Bærum", "Skien", "Alesund", "Sandefjord", "Haugesund", "Tønsberg", "Moss",
+        "Porsgrunn", "Bodø", "Hamar", "Ytrebygda", "Halden", "Larvik", "Askoy", "Kongsberg", "Molde", "Harstad",
+        "Steinkjer", "Lillehammer", "Mo i Rana", "Narvik", "Kristiansund", "Gjovik", "Askim", "Horten", "Elverum",
+        "Jessheim", "Nesoddtangen", "Lillestrom", "Honefoss", "Skien", "Leirvik", "Nesoddtangen", "Stjordalshalsen",
+        "Flekkefjord", "Odda", "Sogndal", "Orkanger", "Svelvik", "Leirvik", "Holmestrand", "Kopervik", "Raufoss"
+    ],
+    "Poland": [
+        "Warsaw", "Krakow", "Lodz", "Wroclaw", "Poznan", "Gdansk", "Szczecin", "Bydgoszcz", "Lublin", "Katowice",
+        "Bialystok", "Gdynia", "Czestochowa", "Sosnowiec", "Radom", "Torun", "Kielce", "Gliwice", "Zabrze", "Bytom",
+        "Bielsko-Biala", "Olsztyn", "Rzeszow", "Ruda Slaska", "Rybnik", "Tychy", "Dabrowa Gornicza", "Opole", "Elblag",
+        "Plock"
+    ],
+    "Portugal": [
+        "Lisbon", "Porto", "Amadora", "Braga", "Coimbra", "Funchal", "Setubal", "Almada", "Agualva-Cacem", "Vila Nova de Gaia",
+        "Loures", "Evora", "Rio Tinto", "Odivelas", "Aveiro", "Amora", "Matosinhos", "Guimaraes", "Ponte de Lima", "Faro"
+    ],
+    "Romania": [
+        "Bucharest", "Cluj-Napoca", "Timisoara", "Iasi", "Constanta", "Craiova", "Galati", "Brasov", "Ploiesti",
+        "Oradea", "Bacau", "Arad", "Pitesti", "Sibiu", "Targu-Mures", "Baia Mare", "Buzau", "Botosani", "Satu Mare",
+        "Râmnicu Vâlcea"
+    ],
+    "Russia": [
+        "Moscow", "Saint Petersburg", "Novosibirsk", "Yekaterinburg", "Nizhny Novgorod", "Kazan", "Chelyabinsk",
+        "Omsk", "Samara", "Rostov-on-Don", "Ufa", "Volgograd", "Krasnoyarsk", "Perm", "Voronezh", "Saratov",
+        "Krasnodar", "Tolyatti", "Izhevsk", "Ulyanovsk", "Barnaul", "Vladivostok", "Yaroslavl", "Irkutsk", "Tyumen",
+        "Khabarovsk", "Makhachkala", "Orenburg", "Novokuznetsk", "Tomsk"
+    ],
+    "San Marino": [
+        "San Marino", "Serravalle", "Borgo Maggiore", "Domagnano", "Fiorentino", "Acquaviva", "Montegiardino",
+        "Chiesanuova", "Faetano", "Fiorentino", "Montegiardino", "Serravalle"
+    ],
+    "Serbia": [
+        "Belgrade", "Novi Sad", "Nis", "Subotica", "Kragujevac", "Zrenjanin", "Pancevo", "Cacak", "Kraljevo",
+        "Smederevo", "Leskovac", "Valjevo", "Kragujevac", "Zrenjanin", "Pancevo", "Cacak", "Kraljevo", "Smederevo",
+        "Leskovac", "Valjevo"
+    ],
+    "Slovakia": [
+        "Bratislava", "Kosice", "Presov", "Zilina", "Nitra", "Banska Bystrica", "Trnava", "Martin", "Trencin",
+        "Poprad", "Prievidza", "Zvolen", "Nove Zamky", "Michalovce", "Komarno", "Ruzomberok", "Povazska Bystrica",
+        "Levice", "Humenne"
+    ],
+    "Slovenia": [
+        "Ljubljana", "Maribor", "Celje", "Kranj", "Velenje", "Koper", "Novo Mesto", "Ptuj", "Trbovlje", "Kamnik",
+        "Jesenice", "Nova Gorica", "Domzale", "Izola", "Krsko", "Sezana", "Postojna", "Murska Sobota", "Logatec",
+        "Slovenj Gradec"
+    ],
+    "Spain": [
+        "Madrid", "Barcelona", "Valencia", "Seville", "Zaragoza", "Malaga", "Murcia", "Palma", "Las Palmas de Gran Canaria",
+        "Bilbao", "Alicante", "Cordoba", "Valladolid", "Vigo", "Gijon", "Hospitalet de Llobregat", "Vitoria-Gasteiz",
+        "Santa Cruz de Tenerife", "Badalona", "Oviedo"
+    ],
+    "Sweden": [
+        "Stockholm", "Gothenburg", "Malmö", "Uppsala", "Västerås", "Örebro", "Linköping", "Helsingborg", "Jönköping",
+        "Norrköping", "Lund", "Umeå", "Gävle", "Borås", "Södertälje", "Eskilstuna", "Halmstad", "Växjö", "Karlstad",
+        "Täby"
+    ],
+    "Switzerland": [
+        "Zurich", "Geneva", "Basel", "Lausanne", "Bern", "Winterthur", "Lucerne", "St. Gallen", "Lugano", "Biel/Bienne",
+        "Thun", "Köniz", "La Chaux-de-Fonds", "Fribourg", "Schaffhausen", "Chur", "Vernier", "Neuchâtel", "Uster",
+        "Sion"
+    ],
+    "Turkey": [
+        "Istanbul", "Ankara", "Izmir", "Bursa", "Adana", "Gaziantep", "Konya", "Antalya", "Mersin", "Kayseri",
+        "Eskisehir", "Diyarbakir", "Samsun", "Denizli", "Sanliurfa", "Adapazari", "Malatya", "Kahramanmaras",
+        "Erzurum", "Van"
+    ],
+    "Ukraine": [
+        "Kyiv", "Kharkiv", "Odesa", "Dnipro", "Donetsk", "Zaporizhzhia", "Lviv", "Kryvyi Rih", "Mykolaiv", "Mariupol",
+        "Luhansk", "Vinnytsia", "Makiivka", "Simferopol", "Sevastopol", "Kherson", "Poltava", "Chernihiv", "Cherkasy",
+        "Sumy"
+    ],
+    "United Kingdom": [
+        "London", "Birmingham", "Glasgow", "Liverpool", "Bristol", "Manchester", "Sheffield", "Leeds", "Edinburgh",
+        "Leicester", "Coventry", "Bradford", "Cardiff", "Belfast", "Stoke-on-Trent", "Wolverhampton", "Nottingham",
+        "Plymouth", "Southampton"
+    ]
+}
