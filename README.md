@@ -30,7 +30,7 @@ wget -O install.sh https://raw.githubusercontent.com/TurkishLinuxUser/Adhan/main
 2. **Run the installation script:**
 
 ```
-sudo bash install.sh
+sh install.sh
 ```
 
 This script will detect your Linux distribution (Debian/Ubuntu, Fedora, or Arch), install necessary dependencies, download the Adhan program, and set it up on your system.
