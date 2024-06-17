@@ -33,9 +33,8 @@ ZIP_FILE="/tmp/adhan.zip"
 $DOWNLOAD_CMD $ZIP_FILE $ZIP_URL
 sudo unzip -o $ZIP_FILE -d ~/.local/share/
 
-chmod +x languages.json
-chmod +x settings.json
-chmod +x Adhan
+sudo chmod +x languages.json
+sudo chmod +x settings.json
 
 echo "~/.local/share/adhan/Adhan" | sudo tee /usr/bin/adhan > /dev/null
 sudo chmod +x /usr/bin/adhan
