@@ -30,26 +30,24 @@ else
 fi
 
 # 3. Zip dosyasını indirme ve çıkarma
-ZIP_URL="https://github.com/TurkishLinuxUser/Adhan/releases/download/1.0.0/adhan.zip"  # Bu URL'yi kendi URL'nizle değiştirin
+ZIP_URL="https://github.com/TurkishLinuxUser/Adhan/releases/download/1.0.0/adhan.zip" 
 ZIP_FILE="/tmp/adhan.zip"
 
 $DOWNLOAD_CMD $ZIP_FILE $ZIP_URL
-sudo unzip -o $ZIP_FILE -d /usr/share/
+sudo unzip -o $ZIP_FILE -d ~/.local/share/
 
 # 4. /usr/bin içerisine adhan dosyası oluşturma
-echo "/usr/share/adhan/Adhan" | sudo tee /usr/bin/adhan > /dev/null
+echo "~/.local/share/adhan/Adhan" | sudo tee /usr/bin/adhan > /dev/null
 sudo chmod +x /usr/bin/adhan
 
 # 5. /usr/share/applications içerisine kısayol oluşturma
 cat << EOF | sudo tee /usr/share/applications/adhan.desktop > /dev/null
 [Desktop Entry]
 Name=Adhan
-Exec=/usr/share/adhan/Adhan
-Icon=/usr/share/adhan/Adhan/icon128x128.png
+Exec=~/.local/share/adhan/Adhan
+Icon=~/.local/share/adhan/Adhan/icon128x128.png
 Type=Application
 Categories=Utility;
 EOF
 
 sudo chmod +x /usr/share/applications/adhan.desktop
-
-echo "Kurulum tamamlandı. Adhan uygulaması Başlat Menüsü'nde bulunabilir."
