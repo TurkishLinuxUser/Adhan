@@ -7,26 +7,22 @@ import threading
 import json
 import pystray
 from PIL import Image
-import os 
+import os
 
 home_dir = os.path.expanduser("~")
 filename = f"{home_dir}/.local/share/adhan/settings.json"
-
 
 try:
     with open(filename, 'r', encoding='utf-8') as f:
         data = json.load(f)
 except FileNotFoundError:
-    
     default_settings = {
         "city": "Brussels",
         "country": "Belgium",
         "language": "EN"
     }
-
     with open(filename, 'w', encoding='utf-8') as f:
         json.dump(default_settings, f, ensure_ascii=False, indent=4)
-
 
 with open(filename, 'r', encoding='utf-8') as f:
     data = json.load(f)
@@ -75,25 +71,19 @@ class EzanProgrami:
         self.root.geometry("400x300")
         self.root.protocol("WM_DELETE_WINDOW", self.hide_window)
 
-        
-        self.settings_file = "settings.json"
+        home_dir = os.path.expanduser("~")
+        self.settings_file = f"{home_dir}/.local/share/adhan/settings.json"
 
-        
         self.prayer_names = ["fajr", "dhuhr", "asr", "maghrib", "isha"]
         self.prayer_times = {name: tk.StringVar() for name in self.prayer_names}
-        self.prayer_triggered = {name: False for name in self.prayer_names}  
+        self.prayer_triggered = {name: False for name in self.prayer_names}
 
-        
-        self.load_countries_and_cities()
-
-        
         self.settings_window = tk.Toplevel(self.root)
         self.settings_window.title(lang_manager.get_text("settings"))
-        self.settings_window.withdraw()  
+        self.settings_window.withdraw()
 
-        
         self.language_var = tk.StringVar(self.settings_window)
-        self.language_var.set(lang_manager.current_language)  
+        self.language_var.set(lang_manager.current_language)
         ttk.Label(self.settings_window, text=lang_manager.get_text("language") + ":").grid(row=0, column=0, padx=10, pady=5, sticky="w")
         self.language_dropdown = ttk.Combobox(self.settings_window, textvariable=self.language_var, values=list(lang_manager.languages.keys()))
         self.language_dropdown.grid(row=0, column=1, padx=10, pady=5, sticky="ew")
@@ -111,86 +101,70 @@ class EzanProgrami:
 
         ttk.Button(self.settings_window, text=lang_manager.get_text("save"), command=self.save_settings_and_close).grid(row=3, columnspan=2, pady=10)
 
-        
         self.create_widgets()
 
-        
         self.load_saved_settings()
 
-        
         self.update_prayer_times()
 
-        
         self.check_time()
 
-    def load_countries_and_cities(self):
-        
-        with open('countries.json', 'r', encoding='utf-8') as f:
-            countries_data = json.load(f)
-
-        
-        self.countries = list(countries_data.keys())
-        self.cities = countries_data
+        self.current_sound_thread = None
 
     def create_widgets(self):
-        
         main_frame = ttk.Frame(self.root)
-        main_frame.grid(row=0, column=0, padx=20, pady=20, sticky="nsew")  
+        main_frame.grid(row=0, column=0, padx=20, pady=20, sticky="nsew")
 
-        
         ttk.Label(main_frame, text=lang_manager.get_text("program_title"), font=("Helvetica", 16)).grid(row=0, column=0, columnspan=2, pady=10)
 
-        
         for i, prayer_name in enumerate(self.prayer_names):
             ttk.Label(main_frame, text=lang_manager.get_text(prayer_name) + ":", font=("Helvetica", 12), anchor="w").grid(row=i+1, column=0, padx=10, pady=5, sticky="w")
             ttk.Label(main_frame, textvariable=self.prayer_times[prayer_name], font=("Helvetica", 12), anchor="w").grid(row=i+1, column=1, padx=10, pady=5, sticky="w")
 
-        
         ttk.Button(main_frame, text=lang_manager.get_text("settings"), command=self.open_settings).grid(row=len(self.prayer_names)+1, column=0, columnspan=2, pady=10)
 
-        
-        main_frame.grid_rowconfigure(0, weight=1)  
-        main_frame.grid_columnconfigure(0, weight=1) 
-        self.root.grid_rowconfigure(0, weight=1) 
-        self.root.grid_columnconfigure(0, weight=1) 
+        main_frame.grid_rowconfigure(0, weight=1)
+        main_frame.grid_columnconfigure(0, weight=1)
+        self.root.grid_rowconfigure(0, weight=1)
+        self.root.grid_columnconfigure(0, weight=1)
 
     def open_settings(self):
-        self.settings_window.deiconify()  
+        self.settings_window.deiconify()
 
     def save_settings_and_close(self):
-        city = self.city_var.get().strip()  
-        country = self.country_var.get().strip()  
+        city = self.city_var.get().strip()
+        country = self.country_var.get().strip()
 
-        
-        if country not in self.countries or city not in self.cities[country]:
-            messagebox.showerror(lang_manager.get_text("program_title"), lang_manager.get_text("invalid_city_country"))
-            return
-
-        
         selected_language = self.language_var.get()
         lang_manager.switch_language(selected_language)
 
-        
         settings = {
             "city": city,
             "country": country,
             "language": selected_language
         }
-        lang_manager.save_settings(self.settings_file, settings)
 
-        
+        # Kontrol etmek için API isteği yapılacak URL
         today = datetime.now().strftime("%d-%m-%Y")
         url = f"https://api.aladhan.com/v1/timingsByCity/{today}?city={city}&country={country}&method=2"
 
-        
-        self.update_prayer_times(url)
+        try:
+            # API'den verileri alma
+            response = requests.get(url)
+            response.raise_for_status()  # HTTP hatalarını kontrol et
 
-        
-        self.settings_window.withdraw()
+            # Verileri başarılı şekilde aldıysak ayarları kaydet ve pencereyi gizle
+            lang_manager.save_settings(self.settings_file, settings)
+            self.settings_window.withdraw()
+            self.root.title(lang_manager.get_text("program_title"))
+            self.create_widgets()
 
-        
-        self.root.title(lang_manager.get_text("program_title"))
-        self.create_widgets()
+            # Namaz saatlerini güncelle
+            self.update_prayer_times(url)
+
+        except requests.exceptions.RequestException as e:
+            # Hata durumunda kullanıcıya hata mesajı göster
+            messagebox.showerror(lang_manager.get_text("program_title"), lang_manager.get_text("api-error"))
 
     def load_saved_settings(self):
         settings = lang_manager.load_settings(self.settings_file)
@@ -201,7 +175,6 @@ class EzanProgrami:
 
     def update_prayer_times(self, url=None):
         if not url:
-            
             city = cityval
             country = coval
             url = f"https://api.aladhan.com/v1/timingsByCity/{datetime.now().strftime('%d-%m-%Y')}?city={city}&country={country}&method=2"
@@ -211,7 +184,6 @@ class EzanProgrami:
             data = response.json()
             timings = data["data"]["timings"]
 
-            
             prayer_times = {
                 "fajr": timings["Fajr"],
                 "dhuhr": timings["Dhuhr"],
@@ -220,59 +192,60 @@ class EzanProgrami:
                 "isha": timings["Isha"]
             }
 
-            
             for prayer_name in self.prayer_names:
                 self.prayer_times[prayer_name].set(prayer_times[prayer_name])
-                self.prayer_triggered[prayer_name] = False  
+                self.prayer_triggered[prayer_name] = False
 
-            
             self.prayer_times_data = prayer_times
+
+            # Her 2 saniyede bir ezan vakitlerini güncelle
+            self.root.after(2000, self.update_prayer_times)
 
         except requests.exceptions.RequestException as e:
             print("API'den namaz saatleri alınamadı:", e)
-
-        
-        self.root.after(30000, self.update_prayer_times) 
+            # Tekrar denemek için 2 saniye sonra güncelleme işlemini tekrar başlat
+            self.root.after(2000, self.update_prayer_times)
 
     def check_time(self):
         current_time = datetime.now().strftime("%H:%M")
 
         for prayer_name, time in self.prayer_times_data.items():
             if current_time == time and not self.prayer_triggered[prayer_name]:
-                threading.Thread(target=playsound, args=("ezan_sesi.mp3",)).start()
-                self.show_window()  
-                self.prayer_triggered[prayer_name] = True  
+                threading.Thread(target=self.play_ezan_sound).start()
+                self.show_window()
+                self.prayer_triggered[prayer_name] = True
 
-        
-        self.root.after(1000, self.check_time)  
+        # Her saniyede kontrol et
+        self.root.after(2000, self.check_time)
+
+    def play_ezan_sound(self):
+        if self.current_sound_thread and self.current_sound_thread.is_alive():
+            return  # Eğer ses zaten çalınıyorsa, bir daha başlatma
+
+        # Ses dosyasını çal
+        self.current_sound_thread = threading.Thread(target=playsound, args=(f"{home_dir}/.local/share/adhan/ezan_sesi.mp3",))
+        self.current_sound_thread.start()
 
     def hide_window(self):
-        self.root.withdraw()  
+        self.root.withdraw()
 
     def show_window(self):
         self.root.deiconify()
-
 
 def main():
     root = tk.Tk()
     ezan_programi = EzanProgrami(root)
 
-    
-    image = Image.open("icon128x128.png")
+    home_dir = os.path.expanduser("~")
+    image = Image.open(f"{home_dir}/.local/share/adhan/icon128x128.png")
     menu = pystray.Menu(
-        pystray.MenuItem(
-            "Show", lambda icon, item: ezan_programi.show_window()
-        ),
-        pystray.MenuItem(
-            "Quit", lambda icon, item: [icon.stop(), root.quit()]
-        )
+        pystray.MenuItem("Show", lambda icon, item: ezan_programi.show_window()),
+        pystray.MenuItem("Quit", lambda icon, item: [icon.stop(), root.quit()])
     )
     icon = pystray.Icon("EzanProgrami", image, "Ezan Programı", menu)
 
-    
     threading.Thread(target=icon.run, daemon=True).start()
 
-    
     root.mainloop()
 
 if __name__ == "__main__":
