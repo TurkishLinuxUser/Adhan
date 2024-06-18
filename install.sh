@@ -31,7 +31,7 @@ ZIP_URL="https://github.com/TurkishLinuxUser/Adhan/releases/download/1.0.0/adhan
 ZIP_FILE="/tmp/adhan.zip"
 
 $DOWNLOAD_CMD $ZIP_FILE $ZIP_URL
-sudo unzip -o $ZIP_FILE -d ~/.local/share/
+unzip -o $ZIP_FILE -d ~/.local/share/
 
 echo "~/.local/share/adhan/Adhan" | sudo tee /usr/bin/adhan > /dev/null
 sudo chmod +x /usr/bin/adhan
