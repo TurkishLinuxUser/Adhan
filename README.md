@@ -1,4 +1,6 @@
 # Adhan Program
+[1](images/1.png)
+[2](images/2.png)
 
 Adhan is a simple yet powerful application designed for Linux users to get accurate prayer times. The application allows easy configuration for different countries and cities and supports multiple languages, providing a user-friendly experience for a diverse audience.
 
