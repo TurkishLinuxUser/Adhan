@@ -38,11 +38,12 @@ sudo chmod +x /usr/bin/adhan
 
 sudo rm -rf /tmp/adhan.zip
 
+USERNAME=$USER
 cat << EOF | sudo tee /usr/share/applications/adhan.desktop > /dev/null
 [Desktop Entry]
 Name=Adhan
-Exec=~/.local/share/adhan/Adhan
-Icon=~/.local/share/adhan/Adhan/icon128x128.png
+Exec=/home/$USERNAME/.local/share/adhan/Adhan
+Icon=/home/$USERNAME/.local/share/adhan/Adhan/icon128x128.png
 Type=Application
 Categories=Utility;
 EOF
