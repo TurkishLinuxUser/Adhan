@@ -36,6 +36,8 @@ unzip -o $ZIP_FILE -d ~/.local/share/
 echo "~/.local/share/adhan/Adhan" | sudo tee /usr/bin/adhan > /dev/null
 sudo chmod +x /usr/bin/adhan
 
+sudo rm -rf /tmp/adhan.zip
+
 cat << EOF | sudo tee /usr/share/applications/adhan.desktop > /dev/null
 [Desktop Entry]
 Name=Adhan
