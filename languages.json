@@ -1,6 +1,6 @@
 {
     "EN": {
-        "program_title": "Prayer Times",
+        "program_title": "Adhan Times",
         "fajr": "Fajr",
         "dhuhr": "Dhuhr",
         "asr": "Asr",
@@ -10,10 +10,15 @@
         "save": "Save",
         "city": "City",
         "country": "Country",
-        "invalid_city_country": "Invalid city or country name!"
+        "invalid_city_country": "Invalid city or country name!",
+        "api-error": "API ERROR!",
+        "language": "Language",
+        "quit": "Quit",
+        "select_azan": "Select Adhan",
+        "stop_azan": "Stop Adhan"
     },
     "DE": {
-        "program_title": "Azan Times",
+        "program_title": "Adhan Times",
         "fajr": "Sabah",
         "dhuhr": "Mittag",
         "asr": "Asr",
@@ -23,7 +28,12 @@
         "save": "speichern",
         "city": "Stadt",
         "county": "Land",
-        "invalid_city_country": "Ungültiger Stadt- oder Ländername!"
+        "invalid_city_country": "Ungültiger Stadt- oder Ländername!",
+        "api-error": "API ERROR!",
+        "language": "Sprache",
+        "quit": "Verlassen",
+        "select_azan": "Wählen Sie Adhan",
+        "stop_azan": "Stoppt Adhan"
     },
     "TR": {
         "program_title": "Ezan Vakitleri",
@@ -36,7 +46,12 @@
         "save": "Kaydet",
         "city": "Şehir",
         "country": "Ülke",
-        "invalid_city_country": "Geçersiz şehir veya ülke ismi!"
+        "invalid_city_country": "Geçersiz şehir veya ülke ismi!",
+        "api-error": "API ERROR!",
+        "language": "Dil",
+        "quit": "Çıkış",
+        "select_azan": "Ezan Sesi Seç",
+        "stop_azan": "Ezanı Durdur"
     },
     "AZ": {
         "program_title": "Azan Vaxları",
@@ -49,6 +64,11 @@
         "save": "Yadda Saxla",
         "city": "Şəhər",
         "country": "Ölkə",
-        "invalid_city_country": "Yanlış şəhər və ya ölkə adı!"
+        "invalid_city_country": "Yanlış şəhər və ya ölkə adı!",
+        "api-error": "API ERROR!",
+        "language": "Dil",
+        "quit": "Çıxış",
+        "select_azan": "Azan Səsi Seç",
+        "stop_azan": "Azanı Dayandır"
     }
 }
