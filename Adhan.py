@@ -7,8 +7,10 @@ import threading
 import json
 import pystray
 from PIL import Image
+import os 
 
-filename = "settings.json"
+home_dir = os.path.expanduser("~")
+filename = f"{home_dir}/.local/share/adhan/settings.json"
 
 
 try:
@@ -63,8 +65,8 @@ class LanguageManager:
         except FileNotFoundError:
             return None
 
-
-lang_manager = LanguageManager("languages.json")
+home_dir = os.path.expanduser("~")
+lang_manager = LanguageManager(f"{home_dir}/.local/share/adhan/languages.json")
 
 class EzanProgrami:
     def __init__(self, root):
