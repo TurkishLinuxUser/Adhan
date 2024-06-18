@@ -6,7 +6,7 @@ Adhan is a simple yet powerful application designed for Linux users to get accur
 
 ## Features
 
-- **Settings Section:** Easily change the country and city to get accurate prayer times for your location.
+- **Settings Section:** Easily change the City and Country settings so that the program displays the language, the sound of the Adhan, and the prayer times appropriate for your location
 - **Language Support:** The application currently supports four languages:
   - English
   - German
