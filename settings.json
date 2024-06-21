@@ -1,6 +1,7 @@
 {
-    "city": "Baku",
-    "country": "Azerbaijan",
+    "city": "Brussels",
+    "country": "Belgium",
     "language": "EN",
-    "azan": "Masjid al-Haram"
+    "azan": "Masjid al-Haram",
+    "font": "fonts/Roboto-Regular.ttf"
 }
