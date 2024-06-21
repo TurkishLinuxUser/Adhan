@@ -33,15 +33,14 @@ ZIP_FILE="/tmp/adhan.zip"
 $DOWNLOAD_CMD $ZIP_FILE $ZIP_URL
 unzip -o $ZIP_FILE -d ~/.local/share/
 
-echo "~/.local/share/adhan/Adhan" | sudo tee /usr/bin/adhan > /dev/null
+echo "~/.local/share/adhan/adhan" | sudo tee /usr/bin/adhan > /dev/null
 sudo chmod +x /usr/bin/adhan
 
 USERNAME=$USER
 cat << EOF | sudo tee /usr/share/applications/adhan.desktop > /dev/null
 [Desktop Entry]
 Name=Adhan
-Exec=/home/$USERNAME/.local/share/adhan/Adhan
-Icon=/home/$USERNAME/.local/share/adhan/Adhan/icon512x512.png
+Exec=/home/$USERNAME/.local/share/adhan/adhan
 Type=Application
 Categories=Utility;
 EOF
