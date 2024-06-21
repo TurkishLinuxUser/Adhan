@@ -27,7 +27,7 @@ else
     DOWNLOAD_CMD="wget -O"
 fi
 
-ZIP_URL="https://github.com/TurkishLinuxUser/Adhan/releases/download/2.0.0/adhan.zip" 
+ZIP_URL="https://github.com/TurkishLinuxUser/Adhan/releases/download/3.0.0/adhan.zip" 
 ZIP_FILE="/tmp/adhan.zip"
 
 $DOWNLOAD_CMD $ZIP_FILE $ZIP_URL
