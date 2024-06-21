@@ -1,44 +1,59 @@
 # Adhan Program
 ![1](images/1.png)
 ![2](images/2.png)
+![3](images/3.png)
 
-Adhan is a simple yet powerful application designed for Linux users to get accurate prayer times. The application allows easy configuration for different countries and cities and supports multiple languages, providing a user-friendly experience for a diverse audience.
+Adhan is a simple yet powerful application designed for Linux and Windows users to get accurate prayer times. The application allows easy configuration for different countries and cities and supports multiple languages, providing a user-friendly experience for a diverse audience.
 
 ## Features
 
-- **Settings Section:** Easily change the City and Country settings so that the program displays the language, the sound of the Adhan, and the prayer times appropriate for your location
-- **Language Support:** The application currently supports four languages:
-  - English
-  - German
-  - Turkish
-  - Azerbaijani
+- **Settings Section:** You can easily change your current city and country so that the program displays the correct information. There are also settings to change the language and the sound of the call to prayer. You don't have to use the default call to prayer sounds, you can add your own call to prayer right now!
 
-## Installation
+- **Language Support:** The application currently supports these languages:
+ - English
+ - German
+ - Turkish
+ - Azerbaijani
+ - French
+ - Russian
 
-To install the Adhan program on your Linux system, follow these steps:
+If you are interested in volunteering for more language support, contact us: turkishlinuxuser@outlook.com
 
-### Prerequisites
+**Operating System support:** Works on all Linux distributions based on Fedora, Arch, Debian/Ubuntu, Windows 10 Home/Enterprise/Pro/LTSB/LTSC systems (tested) Windows 7,8,8.1 and 11 not tested. If you are using one of these and the program does not work on your operating system, you can contact us with the e-mail above.
 
-Ensure you have `curl` or `wget` installed on your system. If not, the installation script will handle the installation for you.
+## How to download?
+### Linux:
 
-### Steps
+First you need to download wget. If wget is not installed (it is usually installed by default), you need to download Wget. 
 
-1. **Download the installation script:**
+#### Fedora:
+```
+sudo dnf install wget
+```
 
+#### Arch:
+```
+sudo pacman -Sy wget
+```
+
+#### Debian/Ubuntu:
+```
+sudo apt install wget
+```
+
+After downloading the wget, download the installer script and run it:
 ```
 wget -O install.sh https://raw.githubusercontent.com/TurkishLinuxUser/Adhan/main/install.sh
 ```
-
-2. **Run the installation script:**
-
 ```
 sh install.sh
 ```
 
-This script will detect your Linux distribution (Debian/Ubuntu, Fedora, or Arch), install necessary dependencies, download the Adhan program, and set it up on your system.
+### Windows:
 
-# Usage
-Once installed, you can run the Adhan program from your terminal by simply typing: `adhan`
+1. Download Adhan-Windows.rar.
+2. Extract the file
+3. Open and install the setup file.
 
 # Contributing
 We welcome contributions from the community! If you'd like to contribute, please follow these steps:
