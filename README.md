@@ -51,7 +51,7 @@ sh install.sh
 
 ### Windows:
 
-1. Download Adhan-Windows.rar.
+1. Download [Adhan-Windows.rar](https://github.com/TurkishLinuxUser/Adhan/releases/download/3.0.0/Adhan-Windows.rar).
 2. Extract the file
 3. Open and install the setup file.
 
