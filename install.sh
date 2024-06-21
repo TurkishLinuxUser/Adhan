@@ -27,11 +27,12 @@ else
     DOWNLOAD_CMD="wget -O"
 fi
 
+rm -rf ~/.local/share/adhan
 ZIP_URL="https://github.com/TurkishLinuxUser/Adhan/releases/download/3.0.0/adhan.zip" 
 ZIP_FILE="/tmp/adhan.zip"
 
 $DOWNLOAD_CMD $ZIP_FILE $ZIP_URL
-unzip -o $ZIP_FILE -d ~/.local/share/
+unzip -o $ZIP_FILE -d ~/.local/share/ > /dev/null
 
 echo "~/.local/share/adhan/adhan" | sudo tee /usr/bin/adhan > /dev/null
 sudo chmod +x /usr/bin/adhan
