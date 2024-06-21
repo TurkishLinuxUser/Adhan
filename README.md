@@ -10,12 +10,12 @@ Adhan is a simple yet powerful application designed for Linux and Windows users 
 - **Settings Section:** You can easily change your current city and country so that the program displays the correct information. There are also settings to change the language and the sound of the call to prayer. You don't have to use the default call to prayer sounds, you can add your own call to prayer right now!
 
 - **Language Support:** The application currently supports these languages:
- - English
- - German
- - Turkish
- - Azerbaijani
- - French
- - Russian
+  - English
+  - German
+  - Turkish
+  - Azerbaijani
+  - French
+  - Russian
 
 If you are interested in volunteering for more language support, contact us: turkishlinuxuser@outlook.com
 
